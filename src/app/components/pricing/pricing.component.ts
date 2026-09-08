@@ -87,13 +87,20 @@ interface PricePlan {
 					}
 				</div>
 
-				<div class="mt-10 md:mt-12 space-y-3 px-4">
-					<p class="text-center text-white/40 text-sm md:text-base">
-						<strong class="text-white/65">Prima ora di lezione gratuita</strong> — prenotando una sessione da 1.5 ore o 2 ore. Vieni a conoscermi senza impegno.
-					</p>
-					<p class="text-center text-white/40 text-sm md:text-base">
-						Il pagamento avviene comodamente di persona in <strong class="text-white/65">contanti</strong> o, se preferite, tramite <strong class="text-white/65">PayPal</strong> o
-						<strong class="text-white/65">Revolut</strong>.<br class="hidden sm:block" />
+				<div class="mt-10 md:mt-12 space-y-4 px-4 max-w-2xl mx-auto">
+					<div class="liquid-glass border border-brand-violet/30 rounded-2xl p-4 sm:p-5 text-center">
+						<span class="inline-block text-xs font-bold uppercase tracking-wider text-emerald-400 bg-emerald-400/10 px-3 py-1 rounded-full mb-2">Garanzia di Prova</span>
+						<p class="text-white text-sm sm:text-base font-semibold">
+							Prima ora di lezione gratuita prenotando una sessione da 1.5h o 2h.
+						</p>
+						<p class="text-white/60 text-xs sm:text-sm mt-1">
+							Vieni a conoscermi senza impegno: proviamo il metodo sul primo esercizio e verifichi subito se è ciò che ti serve.
+						</p>
+					</div>
+
+					<p class="text-center text-white/45 text-xs sm:text-sm">
+						Il pagamento avviene comodamente di persona in <strong class="text-white/70">contanti</strong> o, se preferite, tramite <strong class="text-white/70">PayPal</strong> o
+						<strong class="text-white/70">Revolut</strong>.
 					</p>
 				</div>
 			</div>

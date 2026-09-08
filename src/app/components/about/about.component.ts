@@ -18,12 +18,13 @@ import { NgOptimizedImage } from "@angular/common";
 						Mi chiamo <strong class="text-white/90">Francesco Veneziano</strong>, classe '95, una laurea magistrale in Fisica e lavoro come Full Stack Software Developer.
 					</p>
 					<p class="text-white/65 leading-relaxed text-sm md:text-base mb-4">
-						Aiuto ragazzi tramite le ripetizioni dal 2014 perché ricordo perfettamente com'è uscire da una lezione senza le idee chiare a causa di spiegazioni poco chiare, frettolose e spesso
-						superficiali. Inoltre mi sono reso conto che non tutti coloro che danno ripetizioni riescono a trasmettere i concetti in modo semplice ed adatto ai ragazzi, per cui mi sono messo in gioco
-						per offrire il miglior servizio possibile.
+						Aiuto studenti tramite le ripetizioni dal 2014. Ricordo perfettamente cosa si prova a uscire da scuola con la sensazione di non aver capito, mentre a casa non sempre c'è chi ha il tempo o le competenze giuste per aiutarti senza creare frustrazione.
+					</p>
+					<p class="text-white/65 leading-relaxed text-sm md:text-base mb-4">
+						Avendo sperimentato queste difficoltà in prima persona prima di laurearmi in Fisica, ho cercato e collaudato negli anni metodi pratici che funzionano davvero: niente lezioni noiose o formule imparate a memoria, ma ragionamento logico, schemi visivi ed esempi concreti.
 					</p>
 					<p class="text-white/65 leading-relaxed text-sm md:text-base mb-8">
-						In me non troverai un professore (anche perché non lo sono), ma una figura che farà di tutto per aiutarti a capire quanto queste materie in fondo siano semplici ed affascinanti.
+						In me non troverai un professore che giudica, ma una guida pratica con cui affrontare ogni dubbio con calma, finché anche gli argomenti più ostici non diventano semplici e chiari.
 					</p>
 
 					<div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">

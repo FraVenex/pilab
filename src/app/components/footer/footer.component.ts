@@ -12,7 +12,7 @@ import { RouterLink } from "@angular/router";
 					<div>
 						<div class="text-xl font-extrabold tracking-tight gradient-text mb-3">Francesco Veneziano</div>
 						<p class="text-white/45 text-sm md:text-base leading-relaxed max-w-xs">
-							Ripetizioni di Matematica e Fisica per scuole medie e superiori. Rendo semplici ed affascinanti le materie che da molti sono ritenute ostiche.
+							Supporto concreto in Matematica e Fisica per scuole medie e superiori. Spiegazioni chiare e metodo pratico per superare blocchi e ritrovare serenità nello studio.
 						</p>
 					</div>
 					<div>
@@ -20,9 +20,9 @@ import { RouterLink } from "@angular/router";
 						<ul class="flex flex-col gap-2.5 list-none p-0 m-0">
 							<li>
 								<a
-									href="#chi-sono"
+									href="#metodo"
 									class="text-white/55 hover:text-white text-sm no-underline transition-colors"
-									>Chi sono</a
+									>Il Metodo</a
 								>
 							</li>
 							<li>
@@ -41,6 +41,13 @@ import { RouterLink } from "@angular/router";
 							</li>
 							<li>
 								<a
+									href="#chi-sono"
+									class="text-white/55 hover:text-white text-sm no-underline transition-colors"
+									>Chi sono</a
+								>
+							</li>
+							<li>
+								<a
 									href="#prenota"
 									class="text-white/55 hover:text-white text-sm no-underline transition-colors"
 									>Prenota</a
@@ -49,7 +56,7 @@ import { RouterLink } from "@angular/router";
 						</ul>
 					</div>
 					<div>
-						<div class="text-xs font-bold tracking-widest uppercase text-white/35 mb-4">Contatti</div>
+						<div class="text-xs font-bold tracking-widest uppercase text-white/35 mb-4">Contatti & Social</div>
 						<ul class="flex flex-col gap-2.5 list-none p-0 m-0">
 							<li>
 								<a
@@ -57,6 +64,14 @@ import { RouterLink } from "@angular/router";
 									target="_blank"
 									class="text-white/55 hover:text-white text-sm no-underline transition-colors"
 									>WhatsApp</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://instagram.com"
+									target="_blank"
+									class="text-white/55 hover:text-white text-sm no-underline transition-colors"
+									>Instagram</a
 								>
 							</li>
 							<li>

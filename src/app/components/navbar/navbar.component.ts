@@ -26,9 +26,9 @@ import { LogoComponent } from "../ui/logo.component";
 					<ul class="hidden md:flex items-center gap-1 list-none m-0 p-0">
 						<li>
 							<a
-								href="#chi-sono"
+								href="#metodo"
 								class="text-white/65 hover:text-white hover:bg-white/[0.07] text-sm font-medium px-3.5 py-1.5 rounded-lg transition-all no-underline"
-								>Chi sono</a
+								>Il Metodo</a
 							>
 						</li>
 						<li>
@@ -43,6 +43,13 @@ import { LogoComponent } from "../ui/logo.component";
 								href="#recensioni"
 								class="text-white/65 hover:text-white hover:bg-white/[0.07] text-sm font-medium px-3.5 py-1.5 rounded-lg transition-all no-underline"
 								>Recensioni</a
+							>
+						</li>
+						<li>
+							<a
+								href="#chi-sono"
+								class="text-white/65 hover:text-white hover:bg-white/[0.07] text-sm font-medium px-3.5 py-1.5 rounded-lg transition-all no-underline"
+								>Chi sono</a
 							>
 						</li>
 						<li>
@@ -133,10 +140,10 @@ import { LogoComponent } from "../ui/logo.component";
 			[class.hidden]="!menuOpen()"
 		>
 			<a
-				href="#chi-sono"
+				href="#metodo"
 				class="text-white/75 text-base font-medium py-2.5 border-b border-white/[0.06] no-underline"
 				(click)="toggleMenu()"
-				>Chi sono</a
+				>Il Metodo</a
 			>
 			<a
 				href="#prezzi"
@@ -149,6 +156,12 @@ import { LogoComponent } from "../ui/logo.component";
 				class="text-white/75 text-base font-medium py-2.5 border-b border-white/[0.06] no-underline"
 				(click)="toggleMenu()"
 				>Recensioni</a
+			>
+			<a
+				href="#chi-sono"
+				class="text-white/75 text-base font-medium py-2.5 border-b border-white/[0.06] no-underline"
+				(click)="toggleMenu()"
+				>Chi sono</a
 			>
 			<a
 				href="#prenota"
