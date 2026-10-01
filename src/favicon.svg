@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="favBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1f14" />
+      <stop offset="100%" stop-color="#111128" />
+    </linearGradient>
+    <linearGradient id="favPi" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a8d5b5" />
+      <stop offset="100%" stop-color="#74b08a" />
+    </linearGradient>
+    <linearGradient id="favOrbit" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4a7c59" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#a8d5b5" stop-opacity="0.8" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background rounded squircle -->
+  <rect width="64" height="64" rx="16" fill="url(#favBg)" stroke="rgba(116, 176, 138, 0.3)" stroke-width="1.5" />
+
+  <!-- Orbital ring -->
+  <g transform="rotate(-26 32 32)">
+    <ellipse cx="32" cy="32" rx="23" ry="8" fill="none" stroke="url(#favOrbit)" stroke-width="2" stroke-linecap="round" stroke-dasharray="75 6 15 6" />
+    <circle cx="55" cy="32" r="2.2" fill="#a8d5b5" />
+  </g>
+
+  <!-- Stylized Pi letter -->
+  <!-- Crossbar -->
+  <path d="M 18,22 C 22,20 28,21 33,21 L 46,21 C 48,21 50,20.5 51,22.5" stroke="url(#favPi)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <!-- Left Leg -->
+  <path d="M 26,21 L 26,41 C 26,45 22,46 19,44" stroke="url(#favPi)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <!-- Right Leg -->
+  <path d="M 40,21 L 40,43 C 40,44.5 42,45.5 44,45" stroke="url(#favPi)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

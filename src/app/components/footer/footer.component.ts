@@ -68,7 +68,7 @@ import { RouterLink } from "@angular/router";
 							</li>
 							<li>
 								<a
-									href="https://instagram.com"
+									href="https://instagram.com/FraVenex"
 									target="_blank"
 									class="text-white/55 hover:text-white text-sm no-underline transition-colors"
 									>Instagram</a
@@ -94,7 +94,7 @@ import { RouterLink } from "@angular/router";
 				</div>
 
 				<div class="border-t border-white/[0.06] pt-6 flex flex-wrap items-center justify-between gap-4">
-					<span class="text-white/30 text-xs">© {{ year }} Francesco Veneziano · Aura Math - Tutti i diritti riservati</span>
+					<span class="text-white/30 text-xs">© {{ year }} Francesco Veneziano · FraVenex.PiLab - Tutti i diritti riservati</span>
 					<div class="flex gap-4">
 						<a
 							routerLink="/privacy-policy"

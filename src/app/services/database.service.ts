@@ -6,7 +6,8 @@ import initSqlJs, { Database } from "sql.js";
 })
 export class DatabaseService {
 	private db: Database | null = null;
-	private readonly DB_NAME = "aura_math_db";
+	private readonly DB_NAME = "fravenex_pilab_db";
+	private readonly LEGACY_DB_NAME = "aura_math_db";
 	private readonly STORE_NAME = "sqlite_backup";
 
 	async init(): Promise<Database> {
@@ -109,31 +110,38 @@ export class DatabaseService {
 	}
 
 	private async loadFromIndexedDB(): Promise<ArrayBuffer | null> {
-		return new Promise((resolve, reject) => {
-			const request = indexedDB.open(this.DB_NAME, 1);
-			
-			request.onupgradeneeded = () => {
-				request.result.createObjectStore(this.STORE_NAME);
-			};
-			
-			request.onsuccess = () => {
-				const db = request.result;
-				if (!db.objectStoreNames.contains(this.STORE_NAME)) {
-					resolve(null);
-					return;
-				}
-				const tx = db.transaction(this.STORE_NAME, "readonly");
-				const store = tx.objectStore(this.STORE_NAME);
-				const getRequest = store.get("backup");
-				
-				getRequest.onsuccess = () => {
-					resolve(getRequest.result || null);
+		const loadFrom = (dbName: string): Promise<ArrayBuffer | null> => {
+			return new Promise(resolve => {
+				const request = indexedDB.open(dbName, 1);
+
+				request.onupgradeneeded = () => {
+					request.result.createObjectStore(this.STORE_NAME);
 				};
-				
-				getRequest.onerror = () => reject(getRequest.error);
-			};
-			
-			request.onerror = () => resolve(null);
-		});
+
+				request.onsuccess = () => {
+					const db = request.result;
+					if (!db.objectStoreNames.contains(this.STORE_NAME)) {
+						resolve(null);
+						return;
+					}
+					const tx = db.transaction(this.STORE_NAME, "readonly");
+					const store = tx.objectStore(this.STORE_NAME);
+					const getRequest = store.get("backup");
+
+					getRequest.onsuccess = () => {
+						resolve(getRequest.result || null);
+					};
+
+					getRequest.onerror = () => resolve(null);
+				};
+
+				request.onerror = () => resolve(null);
+			});
+		};
+
+		const currentData = await loadFrom(this.DB_NAME);
+		if (currentData) return currentData;
+
+		return await loadFrom(this.LEGACY_DB_NAME);
 	}
 }

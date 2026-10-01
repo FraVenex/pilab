@@ -1,6 +1,6 @@
-# AuraMath
+# FraVenex.PiLab
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.17.
+Sito web per lezioni e ripetizioni di Matematica e Fisica (medie e superiori) a Nettuno, Anzio e Online, gestito da Francesco Veneziano.
 
 ## Development server
 
