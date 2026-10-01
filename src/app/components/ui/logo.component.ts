@@ -122,9 +122,9 @@ import { Component, Input } from "@angular/core";
 				<div class="flex flex-col justify-center">
 					<span
 						class="text-white font-extrabold tracking-tight leading-none"
-						[style.fontSize]="size * 0.48 + 'px'"
+						[style.fontSize]="size * 0.52 + 'px'"
 					>
-						FraVenex<span class="text-brand-violet">.PiLab</span>
+						Pi<span class="text-brand-violet">Lab</span>
 					</span>
 				</div>
 			}

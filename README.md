@@ -1,4 +1,4 @@
-# FraVenex.PiLab
+# PiLab
 
 Sito web per lezioni e ripetizioni di Matematica e Fisica (medie e superiori) a Nettuno, Anzio e Online, gestito da Francesco Veneziano.
 

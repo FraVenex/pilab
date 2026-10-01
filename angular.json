@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "fravenex-pilab": {
+    "pilab": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:class": {
@@ -38,7 +38,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/fravenex-pilab",
+            "outputPath": "dist/pilab",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -47,6 +47,7 @@
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
+              "src/favicon.svg",
               "src/assets",
               {
                 "glob": "*.wasm",
@@ -90,10 +91,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "fravenex-pilab:build:production"
+              "buildTarget": "pilab:build:production"
             },
             "development": {
-              "buildTarget": "fravenex-pilab:build:development"
+              "buildTarget": "pilab:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -101,7 +102,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "fravenex-pilab:build"
+            "buildTarget": "pilab:build"
           }
         },
         "test": {

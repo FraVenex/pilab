@@ -6,8 +6,8 @@ import initSqlJs, { Database } from "sql.js";
 })
 export class DatabaseService {
 	private db: Database | null = null;
-	private readonly DB_NAME = "fravenex_pilab_db";
-	private readonly LEGACY_DB_NAME = "aura_math_db";
+	private readonly DB_NAME = "pilab_db";
+	private readonly LEGACY_DB_NAMES = ["fravenex_pilab_db", "aura_math_db"];
 	private readonly STORE_NAME = "sqlite_backup";
 
 	async init(): Promise<Database> {
@@ -142,6 +142,11 @@ export class DatabaseService {
 		const currentData = await loadFrom(this.DB_NAME);
 		if (currentData) return currentData;
 
-		return await loadFrom(this.LEGACY_DB_NAME);
+		for (const legacyName of this.LEGACY_DB_NAMES) {
+			const legacyData = await loadFrom(legacyName);
+			if (legacyData) return legacyData;
+		}
+
+		return null;
 	}
 }

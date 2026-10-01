@@ -20,5 +20,5 @@ import { CookieConsentComponent } from "./components/cookie-consent/cookie-conse
 	`
 })
 export class AppComponent {
-	title = "FraVenex.PiLab";
+	title = "PiLab";
 }
